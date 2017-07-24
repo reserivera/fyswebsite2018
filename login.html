@@ -1,0 +1,162 @@
+<html>
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates:600" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src = "jquery-3.2.1.js"></script>
+        
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTJJAKiNm5Kj9NEWcQadtOGKe7h-aqVZI&callback=initMap">
+        </script>
+        
+        <title>Log in</title>
+        <style>
+            
+            body{
+                padding:0;
+                margin:0;
+                margin-top:170px;
+                background-color:#dbdbdb;
+            }
+            
+            /* header */
+            .header{
+                position:absolute;
+                display:inline;
+                top:0px;
+                flex-direction:column;
+                width:100%;
+                height:50px;
+                background-image:url("bg-index2.jpg");
+                background-position: -1000px -0x;
+            }
+            
+            .header-buttons{
+                position: relative;
+                display:inline;
+                margin:auto;
+                
+            }
+            #header-logo p{
+                position: relative;
+                display: inline;
+                padding-left: 20px;
+                
+                color:#f0f0f0;
+                padding-top: 5%;
+                margin-top:20px;
+                text-align:left;
+                font-size-adjust:auto;
+                font-size:220%;
+                font-family: 'Montserrat Alternates', sans-serif;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+            }
+            #header-logo p:hover{
+                color:#557c83;
+                text-shadow:2px 2px #f0f0f0; 
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+            }
+            
+            .user-info{
+                margin-right: 0px;
+            }
+            
+            
+            #view-button{
+                width:10%;
+                height:7%;
+                background-color:#557c83;
+                color:#f0f0f0;
+                border:none;
+                font-family:'Montserrat', sans-serif;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+            }
+            
+            #login-button{
+                position: relative;
+                float: right;
+                width:7%;
+                height:34%;
+                
+                margin-right:15px;
+                margin-top: 2%;
+                background-position:0px 0px;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+                
+                background-color:#557c83;
+                color:#f0f0f0;
+                border:none;
+                font-family:'Montserrat', sans-serif;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+            }
+            
+            #register-button{
+                position: relative;
+                float: right;
+                width:7%;
+                height:34%;
+                margin-right:30px;
+               margin-top: 2%;
+                background-position:0px 0px;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+                
+                background-color:#557c83;
+                color:#f0f0f0;
+                border:none;
+                font-family:'Montserrat', sans-serif;
+                transition-duration:0.5s;
+                transition-timing-function:ease;
+            }
+        </style>
+        
+        <script>
+         window.onscroll = function(){
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("scrollUp").style.display = "block";
+                } else {
+                    document.getElementById("scrollUp").style.display = "none";
+                }
+            };
+        
+            
+            
+        </script>
+    </head>
+
+    
+    
+    
+    <body>
+    <div class="header">
+            <div id="header-logo">
+                <p>placeholder</p>
+                
+                
+                
+                <span class="header-buttons">
+                    <span class="user-info">
+                    <input type=text></input>
+                    <input type=password></input>
+                    </span>
+                <a href="index.html"><button id="register-button">Register</button></a>
+                <a href="all-photos-page.html"><button id="login-button">Log In</button></a>
+            </span>
+                
+            </div>
+            
+    </div>
+        
+        
+    <button id="view-button">VIEW MORE</button>
+            
+    </body>
+
+</html>
